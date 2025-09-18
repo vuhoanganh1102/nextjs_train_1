@@ -1,6 +1,5 @@
 import { Member } from "@/app/react-query/useMutiationWithMember";
 import GetId from "./components/GetId";
-import { use } from "react";
 import axios from "axios";
 async function getMember(id: number): Promise<Member> {
   const res = await axios.get(`http://localhost:3000/member/${id}`);

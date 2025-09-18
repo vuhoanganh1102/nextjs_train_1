@@ -4,6 +4,9 @@ import "./globals.css";
 import QueryProvider from "./reactQueryProvider";
 import { AntdRegistry } from "@ant-design/nextjs-registry";
 import "@ant-design/v5-patch-for-react-19";
+import useAuth from "./hooks/Auth/useAuth";
+import Link from "next/link";
+import { routes } from "./routes";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],

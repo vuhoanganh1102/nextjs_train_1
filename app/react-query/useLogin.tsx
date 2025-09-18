@@ -25,8 +25,8 @@ function useLogin() {
     mutationFn: (data: Props) => loginApi(data),
     onSuccess: async (data) => {
       console.log("Mutation success!", data);
-      window.localStorage.setItem("access-token", data.accessToken);
-      window.localStorage.setItem("access-token", data.refreshToken);
+      window.sessionStorage.setItem("access-token", data.accessToken);
+      window.localStorage.setItem("refresh-token", data.refreshToken);
       return <Link href={routes.Member.ManualOnboarding} />;
     },
     onError: (error, variables, context) => {

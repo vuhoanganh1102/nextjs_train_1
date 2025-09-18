@@ -1,3 +1,6 @@
+import RenderNow from "./components/render";
+
 export default function ManualOnboarding() {
-  return <div>Test</div>;
+  // const { accessToken } = useAuth();
+  return <RenderNow />;
 }
